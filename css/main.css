@@ -1,0 +1,172 @@
+﻿.page {
+    width: 55.5rem;
+    margin: 0 auto;
+    padding-top: 3rem;
+}
+
+header{
+	position: relative;
+    background: dimgray;
+    color: white;
+}
+
+header  h1{
+    padding: 0rem;
+    text-align: center;
+}
+
+ header   .nuevo{
+	position: absolute;
+	top: 0;
+	cursor: pointer;
+	right: 0;
+	padding: 0.55rem;
+	background: limegreen;
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+}
+.student-list{
+    padding: 0;
+}
+
+.student-list   li {
+    list-style: none;
+    float: left;
+    width: 10.5rem;
+    margin: 15px 1.5rem;
+	border: 2px solid black;
+}
+
+.student-list   li  figure {
+    margin: 10px;
+	position:relative;
+	cursor: pointer;
+}
+
+.student-list   li  figure button {
+    display: none;
+}
+
+.student-list   li  figure:hover button {
+    display: block;
+}
+
+.student-list:first-child, .student-list:last-child{
+    margin: 0;
+}
+
+.student-list  img{
+        width: 100%;
+}
+.student-list     figcaption {
+    text-align: center;
+	border-top: 2px solid black;
+}
+
+.load-more{
+    float: none;
+    clear: both;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.load-more  button{
+      padding: 0.75rem 3rem;
+      outline: 0;
+      border: 0;
+      background: orange;
+      color: white;
+      border-radius: 3px;
+}
+
+.modal-background {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: .50;
+    -webkit-opacity: .5;
+    -moz-opacity: .5;
+    filter: alpha(opacity=50);
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    box-shadow: 0 0 20px 0 #222;
+    -webkit-box-shadow: 0 0 20px 0 #222;
+    -moz-box-shadow: 0 0 20px 0 #222;
+    display: none;
+    left: 50%;
+    margin: -120px 0 0 -160px;
+    padding: 10px;
+    position: fixed;
+    top: 50%;
+    width: 320px;
+    z-index: 1000;
+}
+
+.modal-content-header{
+	border-bottom: 1px solid #e5e5e5;
+    padding: 10px;
+}
+
+.modal-title {
+    line-height: 1.42857;
+    margin: 0;
+}
+
+
+.delete{
+	bottom: -5px;
+    color: red;
+    cursor: pointer;
+    float: right;
+    font-weight: 700;
+    line-height: 1;
+    opacity: 0.65;
+    position: absolute;
+    right: 0;
+    text-shadow: 0 1px 0 #fff;
+}
+
+.modal-close {
+    color: #000;
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    opacity: 0.2;
+    text-shadow: 0 1px 0 #fff;
+}
+
+.modal-content-content{
+	border-bottom: 1px solid #e5e5e5;
+    padding: 10px;
+}
+
+.modal-content-footer{
+    padding: 10px;
+}
+
+.modal-content-footer button{
+   float: right;
+   padding: 0.5rem 1rem;
+   outline: 0;
+   border: 0;
+   background: orange;
+   color: white;
+   border-radius: 3px;
+}
+
+
+.modal-background.active, .modal-content.active {
+    display: block;
+}​
