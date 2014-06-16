@@ -59,7 +59,7 @@ function enviarProfesor(){
 	{
 		var data = {};
 		data['nombre'] = nombre;
-		if(idProfesor == "0")
+		if(idProfesor == "")
 		{
 			crearProfesor(data);
 		}
